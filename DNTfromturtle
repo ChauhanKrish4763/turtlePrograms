@@ -1,0 +1,47 @@
+import math
+import turtle as obj
+
+def d():
+    obj.setheading(270)
+    obj.forward(100)
+    obj.setheading(0)
+    obj.circle(50, 180)
+
+def n():
+    obj.setheading(90)
+    obj.forward(100)
+    obj.setheading(-60)
+
+    # Pythagoras Theorem
+    obj.forward(math.sqrt(100*63*2))
+
+    obj.setheading(90)
+    obj.forward(100)
+
+def t():
+    obj.setheading(90)
+    obj.forward(100)
+    obj.setheading(180)
+    obj.penup()
+    obj.forward(40)
+    obj.pendown()
+    obj.setheading(0)
+    obj.forward(80)
+
+
+obj.penup()
+obj.setpos(-150, 100)
+obj.pendown()
+d()
+
+obj.penup()
+obj.setpos(-50, 0)
+obj.pendown()
+n()
+
+obj.penup()
+obj.setpos(80, 0)
+obj.pendown()
+t()
+
+obj.done()
